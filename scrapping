@@ -21,3 +21,27 @@ if response.status_code == 200:
     print(text)
 else:
     print("Failed to retrieve the webpage. Status code:", response.status_code)
+import random
+
+# Generate a random integer between a range
+random_integer = random.randint(1, 100)
+print("Random Integer:", random_integer)
+
+# Generate a random float between 0 and 1
+random_float = random.random()
+print("Random Float:", random_float)
+
+# Generate a random float within a specified range
+random_float_range = random.uniform(1.0, 10.0)
+print("Random Float in Range:", random_float_range)
+
+# Select a random item from a list    
+my_list = ["apple", "banana", "cherry", "date"]
+random_item = random.choice(my_list)
+print("Random Item from List:", random_item)
+
+# Shuffle the order of elements in a list
+random.shuffle(my_list)
+print("Shuffled List:", my_list)
+
+
